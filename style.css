@@ -14,8 +14,8 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 1000;
+    width:100%
+  
 }
 
 
@@ -41,43 +41,14 @@ body{
 
 .nav-links a{
     color: black;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .div-right{
     display: flex;
     gap: 18px;
-    font-size: 18px;
-}
-
-
-
-
-/* .container{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 0px;
     
 }
-
-.box{
-  width: 50%;
-}
-
-.box img{
-    width:100%;
-    height: auto;
-    display: block;
-}
-
-.box1 img{
-    width:695px;
-    height:auto;
-    margin: 0px;
-    padding:0px;
-} */
-
 .big{
   display: grid;
   position: relative;
@@ -86,8 +57,6 @@ body{
   display:inline-flex;
   width: 100%;
 }
-
-
 .big::after{
     content: "";
     position: absolute;
@@ -97,7 +66,6 @@ body{
         rgba(0,0,0,0.1)
     );
 }
-
 .big h3{
     position: absolute;
     bottom: 30px;
@@ -113,22 +81,16 @@ body{
     height: 50px;
        
 }
-
 section{
     background: linear-gradient(to bottom, #ffffff, #f7f7f7);
     padding: 20px 0;
+    width: auto;
 }
-
-
-
-
-    
- 
 .products{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 0px; 
-    padding:0px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 0px; 
+  padding:0px;
 }
 
 .products img{
@@ -149,15 +111,15 @@ section{
 .image{
  
   display: inline-flex;
-    justify-content: space-between;
-    width: max-content;
-    height: max-content;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;  
+  height: max-content;
 }
  .img17 img{
-  
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   height: auto;
-  margin-left: 275px;
   margin-top: 0px;
  }
 
@@ -165,7 +127,7 @@ section{
   font-weight: 100;
   margin-top: 12px;
   margin-bottom: 12px;
-  margin-left: 275px;
+  text-align: center;
   color: #000 ;
 
  }
@@ -174,15 +136,15 @@ section{
   font-weight: 100;
   margin-top: 12px;
   margin-bottom: 12px;
-  margin-left: 275px;
+  text-align: center;
   color: #000 ;
 }
   
 
 
  .img18 img{
-  
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   height: auto;
   margin-left: 0px;
   margin-top: 0px;
@@ -192,6 +154,7 @@ section{
   font-weight: 100;
   margin-top: 12px;
   margin-bottom: 12px;
+  text-align: center;
   margin-left: 0px;
   color: #000 ;
 
@@ -202,6 +165,7 @@ section{
   margin-top: 12px;
   margin-bottom: 12px;
   margin-left: 0px;
+  text-align: center;
   color: #000 ;}
 
   .small1,
@@ -216,12 +180,6 @@ section{
     text-decoration: underline;
 }
 
-
- 
- 
-
-
- /* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -232,12 +190,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* FOOTER */
-/* .hm-footer {
-  background: #fff;
-  padding: 80px 60px 40px;
-  color: #000;
-} */
  .hm-footer{
     background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
     padding: 80px 60px 40px;
@@ -245,7 +197,7 @@ body {
 }
 
 
-/* GRID LAYOUT */
+
 .hm-footer-top {
   max-width: 1400px;
   margin: auto;
@@ -253,15 +205,11 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 80px;
 }
-
-/* HEADINGS */
 .hm-col h4 {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-
-/* LINKS */
 .hm-col a {
   display: block;
   font-size: 13px;
@@ -274,7 +222,6 @@ body {
   text-decoration: underline;
 }
 
-/* NEWSLETTER */
 .hm-news p {
   font-size: 14px;
   line-height: 1.6;
@@ -283,12 +230,11 @@ body {
 
 .read-more {
   font-size: 13px;
-  /* font-weight: ; */
+  
   text-decoration: underline;
   color: #000;
 }
 
-/* BOTTOM */
 .hm-footer-bottom {
   margin-top: 80px;
   display: flex;
@@ -340,6 +286,7 @@ body {
         display: flex;
     }
 
+
     .nav-links{
         position: absolute;
         top: 75px;
@@ -364,8 +311,10 @@ body {
     .products{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        padding: 10px;
+        grid-template-rows:repeat(4, 1fr);
+
+        gap: 0px;
+        padding: 0px;
     }
 
     .products img{
@@ -374,14 +323,14 @@ body {
 
     
     .image{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        
     }
 
     .img17 img,
     .img18 img{
-        width: 50%;
-        margin-left: 0;
+       max-width: 100%;
     }
 
     .text1,
